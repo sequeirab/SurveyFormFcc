@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey FCC</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <form id="survey-form">
+   	<h1 id='title'>Free code camp survey</h1>
+   <p id="description">Surver about <a href="https://www.freecodecamp.org/" target=_blank>freecodecamp.org</a></p>
+   <div>
+   	<label id="name-label">Name</label><br>
+   	<input id="name" type="text" name="name" placeholder="Enter your full name" required="">
+   	<br>
+   	<label id="email-label">Email</label><br>
+   	<input id="email" type="email" name="email" placeholder="Enter your email" required>
+    <br>
+    <label id="number-label">Age you started coding</label><br>
+    <input id="number" min="1" max="99" type="number" name="number" placeholder="Age">
+    <br>
+    <label>What is your profession:</label><br>
+    <select id="dropdown" name="dropdown">
+    	<option id ="disabled" disabled selected value>Select best option</option>
+    	<option value="Student">Student</option>
+    	<option value="Part Time Job">Part Time Job</option>
+    	<option value="Full Time Student">Full Time Job</option>
+    </select>
+    <br>
+    <label>Would you recommend Freecodecamp to a friend?</label>
+    <br><input type="radio" name="answer" value="Not sure">Not sure
+    <br><input type="radio" name="answer" value="Maybe">Maybe
+    <br><input type="radio" name="answer" value="Definitely">Definitely
+    <br>
+    <label>What certificates are you interested in?</label>
+    <br><input type="checkbox" name="course" value="Front-end Developer">Front-end Developer
+    <br><input type="checkbox" name="course" value="Back-end Developer">Back-end Developer
+    <br><input type="checkbox" name="course" value="Both">Both
+    <br>
+    Any additional comments?<br>
+    <textarea id="textarea"></textarea>
+
+    <br>
+    <input id="submit" type="submit" name="submit" value="SUBMIT">
+   </div>
+  </form>
+</body>
+</html>
+
